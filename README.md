@@ -10,7 +10,7 @@ Este repositório é dedicado ao curso de Introdução às Redes Neurais e *Deep
 ## Recursos
 
 - **Videoaulas**: Acesse a playlist completa no YouTube: [Videoaulas do Professor Denilson Alves Pereira](https://www.youtube.com/playlist?list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp)
-- **Livro**: Sandro Skansi. Introduction to Deep Learning: From Logical Calculusto Artificial Intelligence. Springer, 2018.
+- **Livro**: Sandro Skansi. Introduction to Deep Learning: From Logical Calculus to Artificial Intelligence. Springer, 2018.
 
 ## Estrutura do Repositório
 ├── Anexo<br>
