@@ -97,7 +97,7 @@ Para processarmos o modelo, precisamos multiplicar cada entrada pelo seu peso co
 - Se a soma ponderada das entradas (multiplicação das entradas pelos seus pesos) for menor ou igual a um *threshold* (viés/limiar), a saída será 0.
 - Se a soma ponderada for maior que o *threshold*, a saída será 1.
 
-![Resultado da saída](https://latex.codecogs.com/png.image?%5Cinline%20%5Clarge%20%5Cdpi%7B150%7D%5Cbg%7Bblack%7D%5Ctext%7Bsaida%7D=%5Cbegin%7Bcases%7D0,&%5Ctext%7Bse%7D%5Cmathbf%7Bw%7D%5ET%5Cmathbf%7Bx%7D&plus;b%5Cleq%200%5C%5C1,&%5Ctext%7Bse%7D%5Cmathbf%7Bw%7D%5ET%5Cmathbf%7Bx%7D&plus;b%3E0%5Cend%7Bcases%7D)
+![Resultado da saída](https://latex.codecogs.com/png.image?%5Cinline%20%5Clarge%20%5Cdpi%7B150%7D%5Cbg%7Bblack%7D%5Ctext%7Bsaida%7D=%5Cbegin%7Bcases%7D0,&%5Ctext%7Bse%7D%5Cquad%5Cmathbf%7Bw%7D%5ET%5Cmathbf%7Bx%7D&plus;b%5Cleq%200%5C%5C1,&%5Ctext%7Bse%7D%5Cquad%5Cmathbf%7Bw%7D%5ET%5Cmathbf%7Bx%7D&plus;b%3E0%5Cend%7Bcases%7D)
 
 **OBS:** O *threshold*/limiar é um valor que **define o ponto de decisão**. Se a soma ponderada for menor ou igual a esse valor, a saída será 0 (o Perceptron não "dispara"). Se a soma ponderada for maior, a saída será 1 (o Perceptron "dispara").
 
