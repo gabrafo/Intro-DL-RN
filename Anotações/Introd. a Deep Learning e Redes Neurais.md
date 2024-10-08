@@ -50,7 +50,7 @@ Redes neurais costumam trabalhar com cálculo vetorial. No exemplo abaixo, temos
 
 ![Imagem 4.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%204.png)
 
-(Imagens do slide do prof. Denilson, disponíveis em suas [videoaulas]((https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
+(Imagens do slide do prof. Denilson, disponíveis em suas [videoaulas](https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira).
 
 ## O que é *Deep Learning*?
 É o uso de redes neurais artificiais profundas (com diversas camadas) para gerar modelos matemáticos complexos. Quanto mais camadas, mais complexo é o processamento dos modelos.
@@ -59,7 +59,7 @@ Exemplo de rede neural:
 
 ![Imagem 2.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%202.png)
 
-(Imagem do slide do prof. Denilson, disponível em suas [videoaulas]((https://www.youtube.com/watch?v=Au9k8Qyag-g&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
+(Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=Au9k8Qyag-g&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira).
 Para mais arquiteturas de redes neurais, visite: [The mostly complete chart of Neural Networks, explained | by Andrew Tch | Towards Data Science](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464).
 
 ## Modelo Perceptron
@@ -69,7 +69,7 @@ O **Perceptron** é o modelo mais simples de uma **rede neural**. Ele foi desenv
 
 ![Imagem 5.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%205.png)
 
-Na imagem acima, consideramos `x1`, `x2` e `x3` como atributos. (Imagem do slide do prof. Denilson, disponível em suas [videoaulas]((https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
+Na imagem acima, consideramos `x1`, `x2` e `x3` como atributos. (Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira).
 
 #### Estrutura do Perceptron
 1. Entrada (*input*): 
@@ -123,11 +123,11 @@ No exemplo abaixo, temos como atributo de maior peso o estado do tenista (ou sej
 
 ![Imagem 6.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%206.png)
 
-(Imagem do slide do prof. Denilson, disponível em suas [videoaulas]((https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
+(Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira).
 
 Se valorizássemos mais outro atributo, como a condição climática, teríamos um resultado diferente, com o tenista indo jogar tênis no dia de hoje, já que, nesse caso, a somatória ultrapassaria o limiar de valor 5.
 
 ![Imagem 7.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%207.png)
 
-(Imagem do slide do prof. Denilson, disponível em suas [videoaulas]((https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
+(Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira).
 
