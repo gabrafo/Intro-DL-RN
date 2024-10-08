@@ -31,3 +31,101 @@ Alguns métodos clássicos de machine learning:
 - Árvore de Decisão
 - Knn
 - K-Means
+
+## O que são Redes Neurais?
+**Redes neurais** são uma imitação (ainda que simplificada) do neurônio biológico humano, que recebe informações/estímulos e os processa, aplicando os devidos pesos para gerar uma saída. Uma rede neural é composta por **camadas de neurônios artificiais** conectados entre si. Cada camada realiza um processamento dos dados e passa o resultado para a próxima camada, até gerar a saída final.
+
+- **Camada de entrada**: Recebe os dados de entrada.
+- **Camadas ocultas**: Processam os dados, ajustando os pesos e realizando cálculos.
+- **Camada de saída**: Gera o resultado final do processamento.
+
+As redes neurais existem desde 1950, no entanto, se popularizaram apenas a partir dos anos 2000 devido a alguns fatores, como o maior volume de dados disponível (*Big Data*), maior capacidade de processamento por parte do *hardware* e, consequentemente, melhores GPUs (placas de vídeo).
+
+### Entrada/saída de dados
+Redes neurais costumam trabalhar com cálculo vetorial. No exemplo abaixo, temos um exemplo de uma matriz contendo valores "x", onde cada linha representa um atributo (ou *feature*) e cada coluna representa um exemplo (ou instância de treinamento/teste).
+
+![Imagem 3.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%203.png)
+
+![Imagem 4.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%204.png)
+
+(Imagens do slide do prof. Denilson, disponíveis em suas [videoaulas]((https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
+
+## O que é *Deep Learning*?
+É o uso de redes neurais artificiais profundas (com diversas camadas) para gerar modelos matemáticos complexos. Quanto mais camadas, mais complexo é o processamento dos modelos.
+
+Exemplo de rede neural:
+
+![Imagem 2.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%202.png)
+
+(Imagem do slide do prof. Denilson, disponível em suas [videoaulas]((https://www.youtube.com/watch?v=Au9k8Qyag-g&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
+Para mais arquiteturas de redes neurais, visite: [The mostly complete chart of Neural Networks, explained | by Andrew Tch | Towards Data Science](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464).
+
+## Modelo Perceptron
+### O que é o Perceptron?
+O **Perceptron** é o modelo mais simples de uma **rede neural**. Ele foi desenvolvido por Frank Rosenblatt na década de 1950 e serve como um bloco básico para redes neurais mais complexas. O Perceptron realiza uma tarefa de **classificação binária**, ou seja, ele tenta classificar uma (ou mais) entrada(s) em uma de duas categorias (como sim/não, verdadeiro/falso, etc.).
+É o modelo mais simples de rede neural.
+
+![Imagem 5.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%205.png)
+
+Na imagem acima, consideramos `x1`, `x2` e `x3` como atributos. (Imagem do slide do prof. Denilson, disponível em suas [videoaulas]((https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
+
+#### Estrutura do Perceptron
+1. Entrada (*input*): 
+Imagine que temos várias entradas, cada uma com um valor. Essas entradas são as informações que queremos classificar. Por exemplo, ao tentar predizer clientes perdidos ou ativos em uma determinada companhia de crédito, precisamos informar ao modelo algumas informações sobre esses clientes.
+   
+Essas informações (características dos clientes) são representadas como `x1`, `x2`, ..., até chegarmos a `xn`, onde:
+- x1​ é o valor da primeira característica,
+- x2​ é o valor da segunda característica,
+- e assim por diante até a enésima característica.
+
+2. Pesos (*weights*): 
+Cada entrada tem um **peso** associado a ela, que indica a importância dessa característica na classificação. Esses pesos são representados como `w1`, `w2`, ..., até `wn`. Inicialmente, os pesos são atribuídos aleatoriamente, mas serão ajustados conforme o modelo aprende.
+
+O peso funciona assim:
+- Se uma entrada for mais importante, o seu peso será maior.
+- Se uma entrada for menos importante, o peso será menor.
+
+3. Cálculo da soma ponderada:
+Para processarmos o modelo, precisamos multiplicar cada entrada pelo seu peso correspondente e, em seguida, somar todos esses valores.
+
+**Fórmula do somatório**: 
+
+![Fórmula do somatório](https://latex.codecogs.com/png.image?\inline&space;\large&space;\dpi{150}\bg{black}$$\sum_j&space;x_j\cdot&space;w_j\quad=\quad(x_1\cdot&space;w_1)&plus;(x_2\cdot&space;w_2)&plus;\dots&plus;(x_n\cdot&space;w_n)$$)
+
+- Se a soma ponderada das entradas (multiplicação das entradas pelos seus pesos) for menor ou igual a um *threshold* (viés/limiar), a saída será 0.
+- Se a soma ponderada for maior que o *threshold*, a saída será 1.
+
+![Resultado da saída](https://latex.codecogs.com/png.image?\inline&space;\large&space;\dpi{150}\bg{black}$$\text{saida}=\begin{cases}0,&\text{se}\sum_j&space;x_j\cdot&space;w_j\leq\text{threshold}\\1,&\text{se}\sum_j&space;x_j\cdot&space;w_j>\text{threshold}\end{cases}$$)
+
+**OBS:** O *threshold*/limiar é um valor que **define o ponto de decisão**. Se a soma ponderada for menor ou igual a esse valor, a saída será 0 (o Perceptron não "dispara"). Se a soma ponderada for maior, a saída será 1 (o Perceptron "dispara").
+
+Se quiséssemos descrever a fórmula de maneira **vetorial** (ou simplificada), teríamos:
+- `w` é um **vetor de pesos**.
+
+  ![Imagem 9.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%209.png)
+  
+- `x` é um **vetor de entradas**.
+
+  ![Deep Learning/Anexo/Imagem 8.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%208.png)
+  
+Assim, temos, a seguir, uma representação do **produto escalar** ou **interno** dos vetores `w`  e `x`.
+
+![Representação produto escalar](https://latex.codecogs.com/png.image?\inline&space;\large&space;\dpi{150}\bg{black}$$\mathbf{w}^T\mathbf{x}=(x_1\cdot&space;w_1)&plus;(x_2\cdot&space;w_2)&plus;\dots&plus;(x_n\cdot&space;w_n)$$)
+
+Usando `b` como viés (*bias*), temos que seu valor é o limiar (*threshold*) vezes menos um. Portanto, se o produto escalar mais o valor do viés for maior que zero, teremos um saída um, caso contrário, teremos uma saída zero.
+
+![Imagem 10.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%210.png)
+
+**Exemplo do modelo Perceptron**:
+No exemplo abaixo, temos como atributo de maior peso o estado do tenista (ou seja: se está ou não de bom humor) e, após o cálculo da somatória, percebemos que a decisão de jogar ou não tênis tem uma resposta negativa, visto que o cálculo não ultrapassou o limiar estabelecido de valor 5.
+
+![Imagem 6.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%206.png)
+
+(Imagem do slide do prof. Denilson, disponível em suas [videoaulas]((https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
+
+Se valorizássemos mais outro atributo, como a condição climática, teríamos um resultado diferente, com o tenista indo jogar tênis no dia de hoje, já que, nesse caso, a somatória ultrapassaria o limiar de valor 5.
+
+![Imagem 7.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%207.png)
+
+(Imagem do slide do prof. Denilson, disponível em suas [videoaulas]((https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
+
