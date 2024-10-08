@@ -114,7 +114,7 @@ Assim, temos, a seguir, uma representação do **produto escalar** ou **interno*
 
 Usando `b` como viés (*bias*), temos que seu valor é o limiar (*threshold*) vezes menos um. Portanto, se o produto escalar mais o valor do viés for maior que zero, teremos um saída um, caso contrário, teremos uma saída zero.
 
-![Imagem 10.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%210.png)
+![Imagem 10.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2010.png)
 
 **Exemplo do modelo Perceptron**:
 No exemplo abaixo, temos como atributo de maior peso o estado do tenista (ou seja: se está ou não de bom humor) e, após o cálculo da somatória, percebemos que a decisão de jogar ou não tênis tem uma resposta negativa, visto que o cálculo não ultrapassou o limiar estabelecido de valor 5.
