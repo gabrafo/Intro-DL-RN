@@ -1,3 +1,5 @@
+# Introdução às Redes Neurais e *Deep Learning*
+
 _**Machine Learning**_: **Treinamento de modelos computacionais a partir de um conjunto de dados para simular a inteligência humana**. Os algoritmos de _machine learning_ aprendem a realizar tarefas específicas com base em exemplos de dados, sem serem explicitamente programados para cada etapa. Eles são amplamente usados em tarefas como classificação, regressão e agrupamento.
 
 _**Deep Learning**_: A aprendizagem profunda (_deep learning_) é uma **subárea de _machine learning_** que **utiliza redes neurais artificiais**, inspiradas no funcionamento do cérebro humano, para realizar tarefas de aprendizado. **A principal característica do _deep learning_ é o uso de redes neurais profundas**, ou seja, **redes com várias camadas ocultas**. Quanto mais camadas uma rede possui, mais capaz ela é de aprender representações abstratas e complexas dos dados. Esse tipo de abordagem é especialmente eficaz em problemas como reconhecimento de imagens, processamento de linguagem natural (PNL) e sistemas de recomendação. 
@@ -95,7 +97,7 @@ Para processarmos o modelo, precisamos multiplicar cada entrada pelo seu peso co
 - Se a soma ponderada das entradas (multiplicação das entradas pelos seus pesos) for menor ou igual a um *threshold* (viés/limiar), a saída será 0.
 - Se a soma ponderada for maior que o *threshold*, a saída será 1.
 
-![Resultado da saída](https://latex.codecogs.com/png.image?\inline&space;\large&space;\dpi{150}\bg{black}$$\text{saida}=\begin{cases}0,&\text{se}\sum_j&space;x_j\cdot&space;w_j\leq\text{threshold}\\1,&\text{se}\sum_j&space;x_j\cdot&space;w_j>\text{threshold}\end{cases}$$)
+![Resultado da saída](https://latex.codecogs.com/png.image?%5Cinline%20%5Clarge%20%5Cdpi%7B150%7D%5Cbg%7Bblack%7D%5Ctext%7Bsaida%7D=%5Cbegin%7Bcases%7D0,&%5Ctext%7Bse%7D%5Cmathbf%7Bw%7D%5ET%5Cmathbf%7Bx%7D&plus;b%5Cleq%200%5C%5C1,&%5Ctext%7Bse%7D%5Cmathbf%7Bw%7D%5ET%5Cmathbf%7Bx%7D&plus;b%3E0%5Cend%7Bcases%7D)
 
 **OBS:** O *threshold*/limiar é um valor que **define o ponto de decisão**. Se a soma ponderada for menor ou igual a esse valor, a saída será 0 (o Perceptron não "dispara"). Se a soma ponderada for maior, a saída será 1 (o Perceptron "dispara").
 
