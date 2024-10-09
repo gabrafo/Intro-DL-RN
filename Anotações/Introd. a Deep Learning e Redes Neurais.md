@@ -62,16 +62,16 @@ Exemplo de rede neural:
 (Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=Au9k8Qyag-g&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
 Para mais arquiteturas de redes neurais, visite: [The mostly complete chart of Neural Networks, explained | by Andrew Tch | Towards Data Science](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464).
 
-## Modelo Perceptron
-### O que é o Perceptron?
-O **Perceptron** é o modelo mais simples de uma **rede neural**. Ele foi desenvolvido por Frank Rosenblatt na década de 1950 e serve como um bloco básico para redes neurais mais complexas. O Perceptron realiza uma tarefa de **classificação binária**, ou seja, ele tenta classificar uma (ou mais) entrada(s) em uma de duas categorias (como sim/não, verdadeiro/falso, etc.).
+## Modelo *Perceptron*
+### O que é o *Perceptron*?
+O ***Perceptron*** é o modelo mais simples de uma **rede neural**. Ele foi desenvolvido por Frank Rosenblatt na década de 1950 e serve como um bloco básico para redes neurais mais complexas. O *Perceptron* realiza uma tarefa de **classificação binária**, ou seja, ele tenta classificar uma (ou mais) entrada(s) em uma de duas categorias (como sim/não, verdadeiro/falso, etc.).
 É o modelo mais simples de rede neural.
 
 ![Imagem 5.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%205.png)
 
 Na imagem acima, consideramos `x1`, `x2` e `x3` como atributos. (Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
 
-#### Estrutura do Perceptron
+#### Estrutura do modelo *Perceptron*
 1. Entrada (*input*): 
 Imagine que temos várias entradas, cada uma com um valor. Essas entradas são as informações que queremos classificar. Por exemplo, ao tentar predizer clientes perdidos ou ativos em uma determinada companhia de crédito, precisamos informar ao modelo algumas informações sobre esses clientes.
    
@@ -99,7 +99,7 @@ Para processarmos o modelo, precisamos multiplicar cada entrada pelo seu peso co
 
 ![Resultado da saída](https://latex.codecogs.com/png.image?%5Cinline%20%5Clarge%20%5Cdpi%7B150%7D%5Cbg%7Bblack%7D%5Ctext%7Bsaida%7D=%5Cbegin%7Bcases%7D0,&%5Ctext%7Bse%7D%5Cquad%5Cmathbf%7Bw%7D%5ET%5Cmathbf%7Bx%7D&plus;b%5Cleq%200%5C%5C1,&%5Ctext%7Bse%7D%5Cquad%5Cmathbf%7Bw%7D%5ET%5Cmathbf%7Bx%7D&plus;b%3E0%5Cend%7Bcases%7D)
 
-**OBS:** O *threshold*/limiar é um valor que **define o ponto de decisão**. Se a soma ponderada for menor ou igual a esse valor, a saída será 0 (o Perceptron não "dispara"). Se a soma ponderada for maior, a saída será 1 (o Perceptron "dispara").
+**OBS:** O *threshold*/limiar é um valor que **define o ponto de decisão**. Se a soma ponderada for menor ou igual a esse valor, a saída será 0 (o *Perceptron* não "dispara"). Se a soma ponderada for maior, a saída será 1 (o *Perceptron* "dispara").
 
 Se quiséssemos descrever a fórmula de maneira **vetorial** (ou simplificada), teríamos:
 - `w` é um **vetor de pesos**.
@@ -118,7 +118,7 @@ Usando `b` como viés (*bias*), temos que seu valor é o limiar (*threshold*) ve
 
 ![Imagem 10.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2010.png)
 
-**Exemplo do modelo Perceptron**:
+**Exemplo do modelo *Perceptron***:
 No exemplo abaixo, temos como atributo de maior peso o estado do tenista (ou seja: se está ou não de bom humor) e, após o cálculo da somatória, percebemos que a decisão de jogar ou não tênis tem uma resposta negativa, visto que o cálculo não ultrapassou o limiar estabelecido de valor 5.
 
 ![Imagem 6.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%206.png)
@@ -130,4 +130,53 @@ Se valorizássemos mais outro atributo, como a condição climática, teríamos 
 ![Imagem 7.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%207.png)
 
 (Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
+
+### *Perceptron* Multicamada
+Uma rede de *perceptrons* de várias camadas é chamada de *Multilayer Perceptron* (MLP). Diferente de um perceptron simples, que **só pode resolver problemas linearmente separáveis**, o MLP é **capaz de resolver problemas mais complexos e não-linearmente separáveis**, graças à presença de **múltiplas camadas** e à utilização de **funções de ativação não lineares**.
+
+Para ser considerado um *Perceptron* Multicamada, é necessário, ao menos, duas camadas além da camada de entrada (geralmente: uma camada de entrada, uma camada oculta e uma camada de saída).
+
+Essa rede de neurônios é completamente conectada, todos os neurônios "conversam" uns com os outros, então cada saída de um *perceptron* é "replicada" como entrada para todos os neurônios subsequentes.
+
+#### O que é um problema "linearmente separável" e como esse tipo de problema se relaciona com *perceptrons*?
+Imagine que você está organizando dois tipos de objetos em uma mesa: **maçãs** e **laranjas**. Se você conseguir **desenhar uma linha reta** no meio da mesa, de modo que todas as maçãs fiquem de um lado da linha e todas as laranjas fiquem do outro lado, isso significa que esses dois grupos de objetos são **linearmente separáveis**.
+
+Representando as maçãs como `o` e as laranjas como `x`, teríamos:
+```
+Exemplo linearmente separável:
+
+o o o o o  <-- Maçãs
+-----------
+x x x x x  <-- Laranjas
+
+Exemplo não linearmente separável:
+
+x o x o x 
+-----------
+o x o x o  
+
+De ambos os lados da fronteira imaginária existem elementos tanto da
+classe laranja, como da classe maçã.
+```
+
+**Linearmente separável** significa simplesmente que é possível separar dois grupos de coisas com uma linha reta (ou, em casos mais complexos, com uma divisão "reta", como um plano ou hiperplano).
+
+Um ***Perceptron* Simples** faz uma coisa bem específica: ele tenta encontrar uma **reta** (em 2D) ou um **hiperplano** (em mais dimensões) que separe os dados em duas classes.
+
+Vamos ver o processo básico:
+1. O ***perceptron*** recebe dados de entrada (que podem ter 2, 3 ou mais características).
+2. Ele combina essas entradas de uma forma linear (soma ponderada) e, com base nisso, toma uma decisão.
+3. A "decisão" do *perceptron* pode ser vista como traçar uma linha reta (ou um hiperplano) para separar as classes.
+
+Se os dados forem linearmente separáveis (como no exemplo das maçãs e laranjas organizadas perfeitamente), o *perceptron* consegue encontrar essa reta. Mas se os dados **não forem linearmente separáveis**, com as frutas misturadas, por exemplo, ele não conseguirá encontrar uma solução.
+
+Já um ***Perceptron* Multicamada** adiciona mais camadas de neurônios, permitindo que a rede combine informações de formas mais complexas. Em vez de apenas desenhar uma linha reta para separar as classes, ele pode **aprender curvas e fronteiras não lineares** para fazer uma separação mais sofisticada.
+
+Um exemplo de problema que o *Perceptron* Simples não consegue resolver, mas um MLP consegue é a operação XOR (*Exclusive Or*). 
+
+A operação XOR retorna 1 **somente quando** uma das entradas é 1 e a outra é 0 (ou seja, quando as entradas são diferentes).
+
+![Imagem 11.png](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2011.png)
+
+Repare que, mesmo que tentemos, não vamos conseguir traçar uma linha que divida as classes entre "0" e "1" de maneira exata. O *Perceptron* Simples só pode traçar uma **reta** (ou plano) para separar os dados, e isso não é suficiente para resolver o XOR, que exige uma separação **não linear**, que o MLP consegue resolver.
 
