@@ -234,10 +234,14 @@ A ***Leaky* ReLU** (que veremos a seguir) resolve parcialmente o problema do neu
 
 ![Imagem 19](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2019.png)
 
+(Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=5I5nYybVjZ0&t=224s&ab_channel=DenilsonAlvesPereira)).
+
 #### Função *Softmax*
 É um tipo de função sigmóide usada para converter uma lista de números reais (que podem ser positivos, negativos ou zero) em probabilidades. Cada número é transformado em um valor entre 0 e 1, e todos os valores juntos somam 1. Isso é especialmente útil em problemas de classificação multiclasse, onde queremos saber a probabilidade de uma entrada pertencer a diferentes classes. Além disso, ela não é usada em cada camada oculta da rede neural, mas apenas na camada de saída.
 
 ![Imagem 20](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2020.png)
+
+(Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=5I5nYybVjZ0&t=224s&ab_channel=DenilsonAlvesPereira)).
 
 ## Função de custo
 A **função de custo** é uma métrica que avalia o quão bem o modelo está realizando suas previsões. Ela calcula a diferença entre a saída prevista pelo modelo (`ŷ`) e o valor real esperado (`y`), fornecido pelos dados de treinamento. 
