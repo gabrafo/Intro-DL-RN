@@ -6,7 +6,7 @@ _**Deep Learning**_: A aprendizagem profunda (_deep learning_) é uma **subárea
 
 Para contextualizar, um exemplo real de aplicação de _deep learning_ seria o reconhecimento facial, onde uma rede neural profunda aprende a identificar características faciais, como formato de olhos, nariz e boca, em várias camadas, sem necessidade de intervenção humana para definir esses aspectos.
 
-![Imagem 1](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%201)
+![Imagem 1](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%201.png)
 
 ## O que é *Machine Learning*?
 Em tarefas onde é difícil de se delimitar um grupo de regras específico para sua conclusão, utiliza-se o conceito de *machine learning*. Em vez de definir regras manualmente, como seria feito em algoritmos tradicionais, **os modelos de _machine learning_ são treinados com dados e aprendem padrões a partir desses exemplos**. Isso permite que os algoritmos façam previsões, classifiquem informações ou tomem decisões sem serem explicitamente programados para cada situação.
@@ -46,9 +46,9 @@ As redes neurais existem desde 1950, no entanto, se popularizaram apenas a parti
 ### Entrada/saída de dados
 Redes neurais costumam trabalhar com cálculo vetorial. No exemplo abaixo, temos um exemplo de uma matriz contendo valores "x", onde cada linha representa um atributo (ou *feature*) e cada coluna representa um exemplo (ou instância de treinamento/teste).
 
-![Imagem 3](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%203)
+![Imagem 3](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%203.png)
 
-![Imagem 4](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%204)
+![Imagem 4](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%204.png)
 
 (Imagens do slide do prof. Denilson, disponíveis em suas [videoaulas](https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
 
@@ -57,7 +57,7 @@ Redes neurais costumam trabalhar com cálculo vetorial. No exemplo abaixo, temos
 
 Exemplo de rede neural:
 
-![Imagem 2](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%202)
+![Imagem 2](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%202.png)
 
 (Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=Au9k8Qyag-g&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
 Para mais arquiteturas de redes neurais, visite: [The mostly complete chart of Neural Networks, explained | by Andrew Tch | Towards Data Science](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464).
@@ -67,7 +67,7 @@ Para mais arquiteturas de redes neurais, visite: [The mostly complete chart of N
 O ***Perceptron*** é o modelo mais simples de uma **rede neural**. Ele foi desenvolvido por Frank Rosenblatt na década de 1950 e serve como um bloco básico para redes neurais mais complexas. O *Perceptron* realiza uma tarefa de **classificação binária**, ou seja, ele tenta classificar uma (ou mais) entrada(s) em uma de duas categorias (como sim/não, verdadeiro/falso, etc.).
 É o modelo mais simples de rede neural.
 
-![Imagem 5](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%205)
+![Imagem 5](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%205.png)
 
 Na imagem acima, consideramos `x1`, `x2` e `x3` como atributos. (Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
 
@@ -104,11 +104,11 @@ Para processarmos o modelo, precisamos multiplicar cada entrada pelo seu peso co
 Se quiséssemos descrever a fórmula de maneira **vetorial** (ou simplificada), teríamos:
 - `w` é um **vetor de pesos**.
 
-  ![Imagem 9](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%209)
+  ![Imagem 9](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%209.png)
   
 - `x` é um **vetor de entradas**.
 
-  ![Imagem 8](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%208)
+  ![Imagem 8](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%208.png)
   
 Assim, temos, a seguir, uma representação do **produto escalar** ou **interno** dos vetores `w`  e `x`.
 
@@ -116,18 +116,18 @@ Assim, temos, a seguir, uma representação do **produto escalar** ou **interno*
 
 Usando `b` como viés (*bias*), temos que seu valor é o limiar (*threshold*) vezes menos um. Portanto, se o produto escalar mais o valor do viés for maior que zero, teremos um saída um, caso contrário, teremos uma saída zero.
 
-![Imagem 10](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2010)
+![Imagem 10](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2010.png)
 
 **Exemplo do modelo *Perceptron***:
 No exemplo abaixo, temos como atributo de maior peso o estado do tenista (ou seja: se está ou não de bom humor) e, após o cálculo da somatória, percebemos que a decisão de jogar ou não tênis tem uma resposta negativa, visto que o cálculo não ultrapassou o limiar estabelecido de valor 5.
 
-![Imagem 6](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%206)
+![Imagem 6](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%206.png)
 
 (Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
 
 Se valorizássemos mais outro atributo, como a condição climática, teríamos um resultado diferente, com o tenista indo jogar tênis no dia de hoje, já que, nesse caso, a somatória ultrapassaria o limiar de valor 5.
 
-![Imagem 7](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%207)
+![Imagem 7](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%207.png)
 
 (Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=2eNwcqHUP8Y&list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp&index=3&ab_channel=DenilsonAlvesPereira)).
 
@@ -170,7 +170,7 @@ Vamos ver o processo básico:
 
 Se os dados forem linearmente separáveis (como no exemplo das maçãs e laranjas organizadas perfeitamente), o *perceptron* consegue encontrar essa reta. Mas se os dados **não forem linearmente separáveis**, com as frutas misturadas, por exemplo, ele não conseguirá encontrar uma solução.
 
-![[Deep Learning/Anexo/Imagem 14]]
+![Imagem 14](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2014.png)
 
 Já um ***Perceptron* Multicamada** adiciona mais camadas de neurônios, permitindo que a rede combine informações de formas mais complexas. Em vez de apenas desenhar uma linha reta para separar as classes, ele pode **aprender curvas e fronteiras não lineares** para fazer uma separação mais sofisticada.
 
@@ -178,36 +178,36 @@ Um exemplo de problema que o *Perceptron* Simples não consegue resolver, mas um
 
 A operação XOR retorna 1 **somente quando** uma das entradas é 1 e a outra é 0 (ou seja, quando as entradas são diferentes).
 
-![Imagem 11](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2011)
+![Imagem 11](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2011.png)
 
 Repare que, mesmo que tentemos, não vamos conseguir traçar uma linha que divida as classes entre "0" e "1" de maneira exata. O *Perceptron* Simples só pode traçar uma **reta** (ou plano) para separar os dados, e isso não é suficiente para resolver o XOR, que exige uma separação **não linear**, que o MLP consegue resolver.
 
 Exemplo de cálculo de um *Perceptron* Multicamada sem considerarmos a função de ativação:
 
-![Imagem 12](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2012)
+![Imagem 12](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2012.png)
 
 (Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=5I5nYybVjZ0&t=224s&ab_channel=DenilsonAlvesPereira)).
 
 ### Função de ativação
 Cada neurônio é caracterizado pelo peso, *bias* (viés) e a função de ativação. Enquanto os neurônios fazem uma transformação linear na entrada pelos pesos e *bias*, a função de ativação faz uma transformação **não linear**. Isso é o que torna o MLP tão diferente do SLP (*Single Layer Perceptron*).
 
-![Imagem 13](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2013)
+![Imagem 13](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2013.png)
 
 (Imagem do slide do prof. Denilson, disponível em suas [videoaulas](https://www.youtube.com/watch?v=5I5nYybVjZ0&t=224s&ab_channel=DenilsonAlvesPereira)).
 
 #### Função Sigmóide
 É um exemplo de função de ativação, mapeando a saída `z` para o intervalo (0,1) e é usada frequentemente em redes neurais para introduzir não linearidade. Além disso, aparece, principalmente, na camada de saída para problemas de **classificação binária** e não é muito eficaz quando os gradientes se tornam muito pequenos.
 
-![Imagem 15](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2015)
+![Imagem 15](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2015.png)
 
-![Imagem 16](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2016)
+![Imagem 16](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2016.png)
 
 (Imagens do slide do prof. Denilson, disponíveis em suas [videoaulas](https://www.youtube.com/watch?v=5I5nYybVjZ0&t=224s&ab_channel=DenilsonAlvesPereira)).
 
 #### Função TanH (tangente hiperbólica)
 A função tangente hiperbólica (tanh⁡(x)) é uma derivação da função sigmoide. No entanto, ela é **simétrica em relação à origem** (o ponto tanh⁡(0) está no centro do gráfico). A função tanh⁡(x) tem um **intervalo de saída entre -1 e 1**, enquanto a sigmoide tem saída entre 0 e 1. Isso permite que a **tanh⁡(x) lide melhor com valores negativos e positivos em entradas de redes neurais**, ajudando a centrar os dados em torno de zero, o que pode melhorar o desempenho e a convergência durante o treinamento.
 
-![Imagem 17](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2017)
+![Imagem 17](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2017.png)
 
 (Imagens do slide do prof. Denilson, disponíveis em suas [videoaulas](https://www.youtube.com/watch?v=5I5nYybVjZ0&t=224s&ab_channel=DenilsonAlvesPereira)).
 
@@ -216,7 +216,7 @@ Essa é uma das funções de ativação mais populares usadas em redes neurais p
 Além disso, a função ReLU não ativa todos os neurônios ao mesmo tempo, o que torna a rede esparsa e a computação se torna fácil e eficiente.
 Uma de suas desvantagens é que apresenta problemas quando os gradientes são muito pequenos (próximos de zero).
 
-![Imagem 16](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2018)
+![Imagem 16](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2018.png)
 
 (Imagens do slide do prof. Denilson, disponíveis em suas [videoaulas](https://www.youtube.com/watch?v=5I5nYybVjZ0&t=224s&ab_channel=DenilsonAlvesPereira)).
 
@@ -232,12 +232,12 @@ A ***Leaky* ReLU** (que veremos a seguir) resolve parcialmente o problema do neu
 
 ![Leaky ReLU](https://latex.codecogs.com/png.image?\dpi{110}\bg{black}$$\;\text{Leaky&space;ReLU}(x)=\begin{cases}x&\text{se}x\geq&space;0,\\\alpha&space;x&\text{se}x<0\end{cases}\;$$)
 
-![Imagem 19](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2019)
+![Imagem 19](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2019.png)
 
 #### Função *Softmax*
 É um tipo de função sigmóide usada para converter uma lista de números reais (que podem ser positivos, negativos ou zero) em probabilidades. Cada número é transformado em um valor entre 0 e 1, e todos os valores juntos somam 1. Isso é especialmente útil em problemas de classificação multiclasse, onde queremos saber a probabilidade de uma entrada pertencer a diferentes classes. Além disso, ela não é usada em cada camada oculta da rede neural, mas apenas na camada de saída.
 
-![Imagem 20](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2020)
+![Imagem 20](https://github.com/gabrafo/Intro-DL-RN/blob/main/Anexo/Imagem%2020.png)
 
 ## Função de custo
 A **função de custo** é uma métrica que avalia o quão bem o modelo está realizando suas previsões. Ela calcula a diferença entre a saída prevista pelo modelo (`ŷ`) e o valor real esperado (`y`), fornecido pelos dados de treinamento. 
