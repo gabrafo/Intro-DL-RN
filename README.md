@@ -9,9 +9,9 @@ Este repositório é dedicado ao curso de Introdução às Redes Neurais e *Deep
 
 ## Recursos
 
-- **Videoaulas**: Acesse a playlist completa no YouTube: [Videoaulas do Professor Denilson Alves Pereira](https://www.youtube.com/playlist?list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp)
+- **Videoaulas**: [Introdução às Redes Neurais e Deep Learning com o Professor Denilson Alves Pereira](https://www.youtube.com/playlist?list=PLpAVc-5L0TX_draNYxCmjgm2yYKAy9aIp).
 - **Livro**: Sandro Skansi. Introduction to Deep Learning: From Logical Calculus to Artificial Intelligence. Springer, 2018.
-- ***Dataset*** utilizado na terceira atividade do curso: https://www.kaggle.com/datasets/uciml/iris
+- ***Dataset***: Utilizei o *dataset* [Iris](https://www.kaggle.com/datasets/uciml/iris) na resolução da minha terceira atividade no curso.
 
 ## Estrutura do Repositório
 ├── Anexo<br>
