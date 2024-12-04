@@ -13,12 +13,6 @@ Este repositório é dedicado ao curso de Introdução às Redes Neurais e *Deep
 - **Livro**: Sandro Skansi. Introduction to Deep Learning: From Logical Calculus to Artificial Intelligence. Springer, 2018.
 - ***Dataset***: Utilizei o *dataset* [Iris](https://www.kaggle.com/datasets/uciml/iris) na resolução da minha terceira atividade no curso.
 
-## Estrutura do Repositório
-├── Anexo<br>
-│    └── Imagens das anotações<br>
-└── Anotações<br>
-&nbsp;&nbsp;&nbsp;&nbsp;└── Anotações Markdown<br>
-
 ## Contribuições
 
 Contribuições são bem-vindas! Se você deseja contribuir, sinta-se à vontade para abrir um **issue** ou fazer um **pull request**.
